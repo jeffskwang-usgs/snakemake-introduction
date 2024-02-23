@@ -66,7 +66,7 @@ Now it's time to modify the Python code.
 Open `2_process/combine_site_files.py` and change the code to use the rule's `input` and `output` values in place of hardcoded file paths, using the `snakemake` module like before.
 Refer to the previous issues for a refresher on how to do this.
 
-Once done, use the `snakemake` command to test the new rule and create the file `2_process/out/combined_doy.csv`.
+Once done, use the `snakemake` command to test the new rule and create the file `2_process/out/combined_doy.csv`. Be sure to modify the inputs to the `rule all` rule to check for `2_process/out/combined_doy.csv`.
 Check that the file has been created, and that it contains the contents of both `2_process/out/doy_107072210.csv` and `2_process/out/doy_120020150.csv`.
 If everything looks good, let's move forward!
 Reach out to your instructor if you're stuck.
