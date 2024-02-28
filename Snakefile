@@ -1,3 +1,5 @@
+import warnings; warnings.filterwarnings("ignore", "\nPyarrow", DeprecationWarning)
+
 rule all:
     input:
         "3_plot/out/doy_plot.png"
